@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="GlamourRentalAPI – ett REST API för festklänningar och brudklänningar.">
+  <title>Glamour Rental · Klänningar att hyra</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="nav container">
+    <a href="/" class="logo"><span class="brand-mark">✦</span> GLAMOUR <span class="logo-light">RENTAL</span></a>
+    <a href="/swagger-ui.html" class="nav-link">Öppna Swagger <span aria-hidden="true">↗</span></a>
+  </header>
+
+  <main>
+    <section class="hero container">
+      <div class="hero-text">
+        <div class="eyebrow"><span class="little-line"></span> ETT JAVA REST API <span class="little-line"></span></div>
+        <h1>Hitta din<br><em>drömklänning.</em></h1>
+        <p class="intro">Festklänningar och brudklänningar för speciella tillfällen. Det här är startsidan till mitt skolprojekt där jag hanterar klänningar och personer med ett REST API.</p>
+        <div class="hero-buttons">
+          <a href="/swagger-ui.html" class="button button-main">Testa mitt API <span>↗</span></a>
+          <a href="/api/items" class="button button-light">Visa klänningar <span>→</span></a>
+        </div>
+        <p class="tiny-note"><span class="dot"></span> API byggt med Java 25 · Spring Boot 4 · H2</p>
+      </div>
+      <div class="fashion-art" aria-label="Dekorativ illustration av en rosa festklänning" role="img">
+        <div class="fashion-frame">
+          <div class="oval"></div>
+          <svg class="dress-illustration" viewBox="0 0 390 500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="dress" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#f8acc9"/><stop offset="0.48" stop-color="#d85c95"/><stop offset="1" stop-color="#9d3d72"/>
+              </linearGradient>
+              <linearGradient id="shine" x1="0" y1="0" x2="0.9" y2="1">
+                <stop offset="0" stop-color="#fff0f8" stop-opacity="0.9"/><stop offset="1" stop-color="#fff0f8" stop-opacity="0"/>
+              </linearGradient>
+            </defs>
+            <path d="M148 86 Q160 66 174 68 L186 100 L203 100 L215 68 Q230 66 241 86 L255 135 L237 151 L230 193 Q270 255 329 392 Q198 441 63 392 Q121 266 155 193 L145 150 L129 137Z" fill="url(#dress)" stroke="#a75382" stroke-width="2"/>
+            <path d="M174 68 Q194 113 215 68 L226 104 Q204 134 164 104Z" fill="#f9d5e4" opacity="0.9"/>
+            <path d="M150 193 Q195 210 233 193" fill="none" stroke="#ffd9e9" stroke-width="7" stroke-linecap="round"/>
+            <path d="M174 211 Q143 290 117 400 M210 213 Q222 305 254 418" fill="none" stroke="url(#shine)" stroke-width="24" stroke-linecap="round" opacity="0.65"/>
+            <path d="M68 388 Q193 416 322 390" stroke="#ffcede" stroke-width="5" fill="none" opacity="0.8"/>
+            <circle cx="145" cy="210" r="4" fill="#ffe7f0"/><circle cx="239" cy="213" r="4" fill="#ffe7f0"/>
+            <path d="M186 52 Q197 36 204 52 L204 62" fill="none" stroke="#aa6985" stroke-width="3" stroke-linecap="round"/>
+          </svg>
+          <span class="spark spark-one">✦</span><span class="spark spark-two">✧</span><span class="spark spark-three">✦</span>
+          <div class="art-caption">A little touch of glamour <span>♡</span></div>
+        </div>
+        <div class="corner-sticker">FEST & BRÖLLOP<br><strong>♡</strong></div>
+      </div>
+    </section>
+
+    <section class="collection container">
+      <div class="collection-title"><p class="eyebrow">MITT PROJEKT</p><h2>Vad kan API:et göra?</h2><p>Jag har valt ett uthyrningsföretag med fokus på fina klänningar.</p></div>
+      <div class="feature-grid">
+        <article class="feature">
+          <div class="feature-icon">01 <span>✧</span></div>
+          <h3>Klänningar</h3><p>Visa, lägg till, ändra och ta bort klänningar med GET, POST, PUT och DELETE.</p>
+          <a href="/api/items">Se JSON-listan →</a>
+        </article>
+        <article class="feature">
+          <div class="feature-icon">02 <span>♡</span></div>
+          <h3>Personer</h3><p>Spara information om personer som hyr och koppla dem till flera klänningar.</p>
+          <a href="/api/persons">Se personerna →</a>
+        </article>
+        <article class="feature">
+          <div class="feature-icon">03 <span>✦</span></div>
+          <h3>Testa i Swagger</h3><p>Här testar jag anrop, validering och felmeddelanden i mitt REST API.</p>
+          <a href="/swagger-ui.html">Öppna Swagger →</a>
+        </article>
+      </div>
+    </section>
+  </main>
+  <footer><div class="container footer-inner"><span>✦ GLAMOUR RENTAL</span><span>Java + Spring Boot · Skolprojekt</span></div></footer>
+</body>
+</html>
